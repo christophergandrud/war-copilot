@@ -100,34 +100,3 @@ def simulate_war(n : int) :
     player_total, computer_total = sum(player_wins), sum(computer_wins)
     return player_total, player_total
 
-simulate_war(1000)
-
-"""
-
-# --------------------------
-# Play the game
-
-# Create the deck of cards
-our_deck = create_deck()
-
-# Shuffle our_deck of cards
-shuffled_deck = shuffle_deck(our_deck)
-
-# Deal our_deck to the player and computer
-player_deck = deal_cards(shuffled_deck)
-computer_deck = deal_cards(shuffled_deck)
-
-# Assert that player_deck and computer_deck have no duplicate cards
-assert len(set(player_deck) & set(computer_deck)) == 0
-
-# Assert that player_dec and computer_deck are the same length
-assert len(player_deck) == len(computer_deck) 
-
-# Play the game
-player_deck, computer_deck = play_game(player_deck, computer_deck)
-
-# Determine the winner of the game
-find_winner(player_deck, computer_deck)
-
-"""
-
